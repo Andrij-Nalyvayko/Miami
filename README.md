@@ -1,39 +1,12 @@
 # Miami landing page
-Implement [the Miami landing page](https://www.figma.com/file/nHz8bflIwJaWP3P99vKTH5/miami_home_new?node-id=16033%3A3)
-following the lesson videos.
 
-Additionally:
-- Add a favicon
-- Increase Gallery an Testimonial photos on :hover
-- Change text color on hover for phone, email and address
-- Gallery links should open google maps in a new tab
-- Fix menu for small screens (if there is not enough space for all the menu items)
-    ```css
-    .menu {
-      /* Move these rules from .menu__content */
-      box-sizing: border-box;
-      height: 100vh;
-      padding: 24px 0;
-      
-      background-color: #0075ff;
-      
-      /* Add this rule to add scroll when there is not enough space */
-      overflow-y: auto;
-      
-      ...
-    ```
-- To disable page scrolling under the menu add the next code
-    ```css
-    .page__body--with-menu {
-      overflow: hidden;
-    }
-    ```
-    ```js
-    window.addEventListener('hashchange', () => {
-      if (location.hash === '#menu') {
-        document.body.classList.add('page__body--with-menu');
-      } else {
-        document.body.classList.remove('page__body--with-menu');
-      }
-    });
-    ```
+* **Stack technologies:** HTML5, SCSS
+* **Features:** fully responsive web layout, adaptive for different devices and screens
+* **Methods used:** flexbox and css-grid for responsive development, BEM-methodology for better scaling
+* **Links to the:** [DEMO][demo] | [DESIGN][figma]
+
+The website is currently available as a [demo][demo] on GitHub pages, anybody can check it out, from any device available. The landing page was developed using the latest supported technologies and it's fully optimized for search engines because of proper semantic. Everything on the page has been done according to the design, even a 12-columns grid layout was inherited
+
+
+[figma]: https://www.figma.com/file/nHz8bflIwJaWP3P99vKTH5/miami_home_new?node-id=16033%3A3
+[demo]: https://grynkiv0x001.github.io/Miami/
